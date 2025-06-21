@@ -144,7 +144,9 @@ const Contact: React.FC = () => {
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/rakib-uddin-4050381b4/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-gray-200 dark:bg-gray-800 p-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                     aria-label="LinkedIn"
                   >
