@@ -125,7 +125,9 @@ const Contact: React.FC = () => {
                 </h3>
                 <div className="flex space-x-4">
                   <a
-                    href="#"
+                    href="https://github.com/MDrakib-uddin"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-gray-200 dark:bg-gray-800 p-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                     aria-label="Github"
                   >

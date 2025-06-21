@@ -8,7 +8,6 @@ import MLDemo from './components/sections/MLDemo';
 import Contact from './components/sections/Contact';
 import Footer from './components/layout/Footer';
 import { ThemeProvider } from './contexts/ThemeContext';
-import Github from './components/sections/Github';
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
           <Projects />
           <Skills />
           <MLDemo />
-          <Github />
           <About />
           <Contact />
         </main>
