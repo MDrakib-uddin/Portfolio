@@ -24,7 +24,9 @@ const Footer: React.FC = () => {
               <Github size={20} />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/rakib-uddin-4050381b4/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-blue-100 dark:hover:bg-gray-700 transition-colors"
               aria-label="LinkedIn"
             >
