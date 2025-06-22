@@ -70,7 +70,7 @@ const MLDemo: React.FC = () => {
         >
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Interactive <span className="text-blue-600 dark:text-blue-400">ML Demo</span>
+              Interactive <span className="text-blue-600 dark:text-blue-400">CV Demo</span>
             </h2>
             <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
               Experience machine learning in action with this interactive image classification demo.
