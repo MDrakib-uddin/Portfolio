@@ -98,8 +98,10 @@ const Projects: React.FC = () => {
 
           <div className="text-center mt-12">
             <a
-              href="#"
+              href="https://github.com/MDrakib-uddin"
               className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors font-medium"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               View All Projects
               <ArrowRight size={18} className="ml-2" />

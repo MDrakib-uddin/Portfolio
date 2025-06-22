@@ -3,9 +3,9 @@ import { Brain, Database, LineChart, Image, Code, Cpu } from 'lucide-react';
 export const projects = [
   {
     id: 1,
-    title: 'Finetuned Image Classification Model',
+    title: 'Finetuned Image Classification Model For Pets',
     description: 'Developed a finetuned image classification model using Vision Transformers and oxford-pets dataset.',
-    image: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg',
+    image: 'https://media.istockphoto.com/id/480412341/photo/portrait-pomeranian-dog.jpg?s=612x612&w=0&k=20&c=E0rSqNXQF_z6k44g0GiPtXrA9ZzdgBdh-jnYR3PokvI=',
     tags: ['Computer Vision', 'CNN', 'TensorFlow', 'Python','Visiom Transformers','Gradio'],
     link: 'https://github.com/MDrakib-uddin/Hugging-face-fintuned/blob/main/image-classification.ipynb',
     github: 'https://github.com/MDrakib-uddin/Hugging-face-fintuned/blob/main/image-classification.ipynb',
@@ -55,13 +55,13 @@ export const projects = [
   },
   {
     id: 6,
-    title: 'Generative AI Art Project',
-    description: 'Developed a GAN-based model for creating unique digital artwork based on various artistic styles.',
-    image: 'https://images.pexels.com/photos/2156881/pexels-photo-2156881.jpeg',
-    tags: ['GAN', 'Deep Learning', 'Art', 'StyleGAN'],
-    link: '#',
-    github: '#',
-    demo: '#',
+    title: 'Finetuned Audio Classification Model',
+    description: 'Finetuned a pre-trained audio classification model on custom datasets to accurately detect and classify sound events. Improved model performance through data augmentation and hyperparameter tuning.',
+    image: 'https://images.ctfassets.net/3viuren4us1n/7MmrorOl3fJ8QhDi6jxrpW/14d2844c5d9094377ecbf0290cfb3732/audio_classification.jpg',
+    tags: ['Pytorch', 'Torchvision', 'Librosa', 'Gradio','Transformers'],
+    link: 'https://github.com/MDrakib-uddin/Hugging-face-fintuned/blob/main/Fine_tuning_audio_model.ipynb',
+    github: 'https://github.com/MDrakib-uddin/Hugging-face-fintuned/blob/main/Fine_tuning_audio_model.ipynb',
+    demo: 'https://huggingface.co/spaces/rakib730/PartyMusicAgent',
     icon: Image,
   },
 ];
