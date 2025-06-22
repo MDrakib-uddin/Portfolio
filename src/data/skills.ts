@@ -44,6 +44,12 @@ export const skills = [
     category: 'ML/AI',
     icon: LineChart
   },
+  { 
+    id: 'ml_8',
+    name: 'Agentic AI',
+    category: 'ML/AI',
+    icon: Lock
+  },
 
   // Programming Skills
   { 
@@ -82,6 +88,37 @@ export const skills = [
     category: 'Programming',
     icon: Terminal
   },
+  { 
+    id: 'prog_7',
+    name: 'C',
+    category: 'Programming',
+    icon: Code
+  },
+  { 
+    id: 'prog_8',
+    name: 'DSA',
+    category: 'Programming',
+    icon: Code
+  },
+  { 
+    id: 'prog_9',
+    name: 'OOP',
+    category: 'Programming',
+    icon: Code
+  },
+  { 
+    id: 'prog_10',
+    name: 'Database',
+    category: 'Programming',
+    icon: Code
+  },
+  { 
+    id: 'prog_11',
+    name: 'Golang',
+    category: 'Programming',
+    icon: Lock
+  },
+
 
   // Data Skills
   { 
@@ -116,7 +153,7 @@ export const skills = [
   },
   { 
     id: 'data_6',
-    name: 'Big Data',
+    name: 'Prompt Engineering',
     category: 'Data',
     icon: Database
   },
@@ -182,4 +219,23 @@ export const skills = [
     category: 'Tools',
     icon: Lock
   },
+  { 
+    id: 'tool_11',
+    name: 'NumPy & Pandas',
+    category: 'Tools',
+    icon: Lock
+  },
+  { 
+    id: 'tool_12',
+    name: 'Langchain',
+    category: 'Tools',
+    icon: Lock
+  },
+  { 
+    id: 'tool_13',
+    name: 'Vector Databases',
+    category: 'Tools',
+    icon: Lock
+  },
+  
 ];

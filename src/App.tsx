@@ -5,6 +5,7 @@ import Projects from './components/sections/Projects';
 import Skills from './components/sections/Skills';
 import About from './components/sections/About';
 import MLDemo from './components/sections/MLDemo';
+import CompetitiveProgramming from './components/sections/CompetitiveProgramming';
 import Contact from './components/sections/Contact';
 import Footer from './components/layout/Footer';
 import { ThemeProvider } from './contexts/ThemeContext';
@@ -19,6 +20,7 @@ function App() {
           <Projects />
           <Skills />
           <MLDemo />
+          <CompetitiveProgramming />
           <About />
           <Contact />
         </main>

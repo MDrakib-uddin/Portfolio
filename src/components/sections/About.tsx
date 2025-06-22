@@ -66,7 +66,7 @@ const About: React.FC = () => {
               About <span className="text-blue-600 dark:text-blue-400">Me</span>
             </h2>
             <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
-              A passionate machine learning engineer with experience in developing intelligent systems that solve real-world problems.
+              A passionate machine learning enthusiast with experience in developing intelligent systems that solve real-world problems.
             </p>
           </div>
 
