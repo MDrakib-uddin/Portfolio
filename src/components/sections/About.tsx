@@ -166,7 +166,7 @@ const About: React.FC = () => {
                 <div className="relative pl-8">
                   <span className="absolute left-0 top-2 w-3 h-3 bg-blue-500 rounded-full"></span>
                   <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
-                    Data learning & Rainforcement Learning
+                    Deep learning & Rainforcement Learning
                   </h4>
                   <div className="text-gray-500 dark:text-gray-400 text-sm mb-1">
                     IBM • 2025
