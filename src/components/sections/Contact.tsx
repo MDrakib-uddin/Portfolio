@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { Send, Mail, MessageSquare, Phone, MapPin } from 'lucide-react';
 import { useInView } from '../../hooks/useInView';
 
@@ -26,25 +27,39 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus('success');
-      
-      // Reset form
-      setFormState({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
+    setSubmitStatus(null);
+
+    // Replace with your EmailJS credentials
+    const serviceID = 'service_erxsx95';
+    const templateID = 'template_mr4d8ul';
+    const publicKey = '1o8pYFJ5YSSHpU_Qc';
+
+    const templateParams = {
+      name: formState.name,
+      email: formState.email,
+      title: formState.subject,
+      message: formState.message,
+      time: new Date().toLocaleString(),
+    };
+
+    emailjs.send(serviceID, templateID, templateParams, publicKey)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setIsSubmitting(false);
+        setSubmitStatus('success');
+        setFormState({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+        setTimeout(() => setSubmitStatus(null), 5000);
+      }, (err) => {
+        console.log('FAILED...', err);
+        setIsSubmitting(false);
+        setSubmitStatus('error');
+        setTimeout(() => setSubmitStatus(null), 5000);
       });
-      
-      // Reset status after a delay
-      setTimeout(() => {
-        setSubmitStatus(null);
-      }, 3000);
-    }, 1500);
   };
   
   const contactInfo = [

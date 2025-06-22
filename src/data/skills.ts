@@ -39,7 +39,7 @@ export const skills = [
     icon: Brain
   },
   { 
-    id: 'ml_6',
+    id: 'ml_7',
     name: 'Time Series',
     category: 'ML/AI',
     icon: LineChart
