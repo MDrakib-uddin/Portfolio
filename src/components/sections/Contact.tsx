@@ -222,6 +222,23 @@ const Contact: React.FC = () => {
                       <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
                     </svg>
                   </a>
+                  <a
+                    href="https://huggingface.co/rakib730"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-200 dark:bg-gray-800 p-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    aria-label="Hugging Face"
+                  >
+                    <svg width="20" height="20" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <ellipse cx="36" cy="36" rx="36" ry="36" fill="#FFD21F"/>
+                      <ellipse cx="24.5" cy="31.5" rx="3.5" ry="4.5" fill="#fff"/>
+                      <ellipse cx="47.5" cy="31.5" rx="3.5" ry="4.5" fill="#fff"/>
+                      <ellipse cx="24.5" cy="32.5" rx="1.5" ry="2.5" fill="#1A1A1A"/>
+                      <ellipse cx="47.5" cy="32.5" rx="1.5" ry="2.5" fill="#1A1A1A"/>
+                      <path d="M24 44c2.5 3 8.5 5 12 5s9.5-2 12-5" stroke="#1A1A1A" strokeWidth="2.5" strokeLinecap="round"/>
+                      <path d="M18 41c0 4 7 7 18 7s18-3 18-7" stroke="#1A1A1A" strokeWidth="2" strokeLinecap="round"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
