@@ -45,14 +45,14 @@ const Contact: React.FC = () => {
     emailjs.send(serviceID, templateID, templateParams, publicKey)
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
-        setIsSubmitting(false);
-        setSubmitStatus('success');
-        setFormState({
-          name: '',
-          email: '',
-          subject: '',
-          message: '',
-        });
+      setIsSubmitting(false);
+      setSubmitStatus('success');
+      setFormState({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
         setTimeout(() => setSubmitStatus(null), 5000);
       }, (err) => {
         console.log('FAILED...', err);
@@ -184,7 +184,9 @@ const Contact: React.FC = () => {
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="https://x.com/UddinRakib97463"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-gray-200 dark:bg-gray-800 p-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                     aria-label="Twitter"
                   >
@@ -203,23 +205,22 @@ const Contact: React.FC = () => {
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.kaggle.com/rakib730"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-gray-200 dark:bg-gray-800 p-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                    aria-label="YouTube"
+                    aria-label="Kaggle"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
                       height="20"
-                      viewBox="0 0 24 24"
+                      viewBox="0 0 32 32"
                       fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
                     >
-                      <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
-                      <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                      <g>
+                        <path d="M6.857 6.857v18.286h3.429v-6.857l2.857 3.429 7.429 7.429h4.286l-9.143-9.143 8.571-8.571h-4.286l-9.143 9.143v-13.715h-3.429z" fill="#20BEFF"/>
+                      </g>
                     </svg>
                   </a>
                   <a

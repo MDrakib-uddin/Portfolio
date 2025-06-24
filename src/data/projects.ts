@@ -6,7 +6,7 @@ export const projects = [
     title: 'Finetuned Image Classification Model For Pets',
     description: 'Developed a finetuned image classification model using Vision Transformers and oxford-pets dataset.',
     image: 'https://media.istockphoto.com/id/480412341/photo/portrait-pomeranian-dog.jpg?s=612x612&w=0&k=20&c=E0rSqNXQF_z6k44g0GiPtXrA9ZzdgBdh-jnYR3PokvI=',
-    tags: ['Computer Vision', 'CNN', 'TensorFlow', 'Python','Visiom Transformers','Gradio'],
+    tags: ['Computer Vision', 'CNN', 'TensorFlow', 'Python','Vision Transformers','Gradio'],
     link: 'https://github.com/MDrakib-uddin/Hugging-face-fintuned/blob/main/image-classification.ipynb',
     github: 'https://github.com/MDrakib-uddin/Hugging-face-fintuned/blob/main/image-classification.ipynb',
     demo: 'https://huggingface.co/spaces/rakib730/ImageClassification',

@@ -257,6 +257,12 @@ const CompetitiveProgramming: React.FC = () => {
                 <div className="flex items-center space-x-3">
                   <Target size={20} className="text-green-600" />
                   <span className="text-gray-700 dark:text-gray-300">
+                    Data Structure & Algorithms
+                  </span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Target size={20} className="text-green-600" />
+                  <span className="text-gray-700 dark:text-gray-300">
                     Graph Theory & Tree Data Structures
                   </span>
                 </div>
