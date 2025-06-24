@@ -140,7 +140,7 @@ const Hero: React.FC = () => {
            Machine Learning Enthusiast | <span className="text-blue-600 dark:text-blue-400">Competitive Programmer</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mb-8 text-justify">
-           Passionate about designing intelligent systems that learn from data and adapt to solve real-world problems. I actively explore the fields of machine learning, deep learning, Natural Language Processing,Computer Vision,Rainforcement Learning and AI, while sharpening my problem-solving skills through competitive programming. Skilled in algorithms, data structures, and statistical modeling, I aim to bridge theoretical concepts with practical applications.
+           Passionate about designing intelligent systems that learn from data and adapt to solve real-world problems. I actively explore the fields of machine learning, deep learning, natural language processing, computer vision, reinforcement learning, and AI, while sharpening my problem-solving skills through competitive programming. Skilled in algorithms, data structures, and statistical modeling, I aim to bridge theoretical concepts with practical applications.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
