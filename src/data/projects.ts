@@ -3,7 +3,7 @@ import { Brain, Database, LineChart, Image, Code, Cpu } from 'lucide-react';
 export const projects = [
   {
     id: 1,
-    title: 'Finetuned Image Classification Model For Pets',
+    title: 'Fine-tuned Image Classification Model For Pets',
     description: 'Developed a finetuned image classification model using Vision Transformers and oxford-pets dataset.',
     image: 'https://media.istockphoto.com/id/480412341/photo/portrait-pomeranian-dog.jpg?s=612x612&w=0&k=20&c=E0rSqNXQF_z6k44g0GiPtXrA9ZzdgBdh-jnYR3PokvI=',
     tags: ['Computer Vision', 'CNN', 'TensorFlow', 'Python','Vision Transformers','Gradio'],
@@ -14,7 +14,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Finetuned Token Classification LLM Model',
+    title: 'Fine-tuned Token Classification LLM Model',
     description: 'Built an intelligent chatbot using transformer models for token classification.',
     image: 'https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg',
     tags: ['Natural Language Processing', 'Transformers', 'PyTorch', 'BERT','Conll2003 Dataset'],
@@ -45,17 +45,17 @@ export const projects = [
   },
   {
     id: 5,
-    title: 'End to End MLOPS project for Car Price Prediction',
+    title: 'End to End MLOps project for Car Price Prediction',
     description: 'Developed an end-to-end MLOps pipeline for car price prediction, including data preprocessing, model training, deployment, and monitoring. Integrated automated workflows for scalable and continuous delivery using tools like MLflow and Docker..',
     image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg',
-    tags: ['Docker', 'Kubernetes', 'CI/CD pipeline', 'AWS','MLflows',],
+    tags: ['Docker', 'Kubernetes', 'CI/CD pipeline', 'AWS','MLflow',],
     link: 'https://github.com/MDrakib-uddin/MLOPS-project1',
     github: 'https://github.com/MDrakib-uddin/MLOPS-project1',
     icon: Database,
   },
   {
     id: 6,
-    title: 'Finetuned Audio Classification Model',
+    title: 'Fine-tuned Audio Classification Model',
     description: 'Finetuned a pre-trained audio classification model on custom datasets to accurately detect and classify sound events. Improved model performance through data augmentation and hyperparameter tuning.',
     image: 'https://images.ctfassets.net/3viuren4us1n/7MmrorOl3fJ8QhDi6jxrpW/14d2844c5d9094377ecbf0290cfb3732/audio_classification.jpg',
     tags: ['Pytorch', 'Torchvision', 'Librosa', 'Gradio','Transformers'],
