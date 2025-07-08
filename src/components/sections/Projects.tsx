@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div
           ref={ref}
-          className={`transition-all duration-1000 transform ${
+          className={`transition-all duration-500 transform ${
             isInView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
@@ -35,7 +35,7 @@ const Projects: React.FC = () => {
                     : 'opacity-0 translate-y-10'
                 }`}
                 style={{
-                  transitionDelay: `${index * 100}ms`,
+                  transitionDelay: `${index * 40}ms`,
                 }}
               >
                 <div className="h-48 overflow-hidden">
@@ -43,6 +43,7 @@ const Projects: React.FC = () => {
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover object-center"
+                    loading="lazy"
                   />
                 </div>
                 <div className="p-6">

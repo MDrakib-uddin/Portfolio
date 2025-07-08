@@ -50,7 +50,7 @@ const MLDemo: React.FC = () => {
         confidence,
       });
       setIsProcessing(false);
-    }, 1500);
+    }, 700);
   };
 
   const handleImageSelect = (url: string, label: string) => {
@@ -64,7 +64,7 @@ const MLDemo: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div
           ref={ref}
-          className={`transition-all duration-1000 transform ${
+          className={`transition-all duration-500 transform ${
             isInView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
@@ -103,6 +103,7 @@ const MLDemo: React.FC = () => {
                           src={image.url} 
                           alt={`Sample ${image.label}`}
                           className="w-full h-24 object-cover"
+                          loading="lazy"
                         />
                       </div>
                     ))}
@@ -128,6 +129,7 @@ const MLDemo: React.FC = () => {
                             src={selectedImage} 
                             alt="Selected" 
                             className="w-full h-full object-cover"
+                            loading="lazy"
                           />
                         </div>
                         
@@ -147,7 +149,7 @@ const MLDemo: React.FC = () => {
                             </p>
                             <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-4 overflow-hidden">
                               <div 
-                                className="bg-blue-600 h-4 rounded-full transition-all duration-1000 ease-out"
+                                className="bg-blue-600 h-4 rounded-full transition-all duration-500 ease-out"
                                 style={{ width: `${prediction.confidence * 100}%` }}
                               ></div>
                             </div>

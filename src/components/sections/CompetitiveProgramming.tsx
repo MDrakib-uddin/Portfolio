@@ -92,7 +92,7 @@ const CompetitiveProgramming: React.FC = () => {
   const achievements = [
     {
       id: 1,
-      title: 'Codeforces 1200+ Rating',
+      title: 'Codeforces Pupil',
       description: 'Secured 1200+ rating in Codeforces',
       icon: Trophy,
       date: '2024',
@@ -118,7 +118,7 @@ const CompetitiveProgramming: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div
           ref={ref}
-          className={`transition-all duration-1000 transform ${
+          className={`transition-all duration-500 transform ${
             isInView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
@@ -136,12 +136,12 @@ const CompetitiveProgramming: React.FC = () => {
             {platforms.map((platform, index) => (
               <div
                 key={platform.id}
-                className={`bg-gray-50 dark:bg-gray-800/30 rounded-xl p-6 hover:shadow-lg transition-all duration-500 transform ${
+                className={`bg-gray-50 dark:bg-gray-800/30 rounded-xl p-6 hover:shadow-lg transition-all duration-300 transform ${
                   isInView
                     ? 'opacity-100 translate-y-0'
                     : 'opacity-0 translate-y-4'
                 }`}
-                style={{ transitionDelay: `${index * 100}ms` }}
+                style={{ transitionDelay: `${index * 40}ms` }}
               >
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center space-x-3">
@@ -149,7 +149,7 @@ const CompetitiveProgramming: React.FC = () => {
                       className="w-12 h-12 rounded-lg flex items-center justify-center text-white font-bold text-lg"
                       style={{ backgroundColor: platform.color }}
                     >
-                      <img src={platform.icon} alt={`${platform.name} logo`} className="w-full h-full object-contain rounded-lg" />
+                      <img src={platform.icon} alt={`${platform.name} logo`} className="w-full h-full object-contain rounded-lg" loading="lazy" />
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -216,12 +216,12 @@ const CompetitiveProgramming: React.FC = () => {
               {achievements.map((achievement, index) => (
                 <div
                   key={achievement.id}
-                  className={`bg-white dark:bg-gray-800 rounded-lg p-6 text-center transition-all duration-500 transform ${
+                  className={`bg-white dark:bg-gray-800 rounded-lg p-6 text-center transition-all duration-300 transform ${
                     isInView
                       ? 'opacity-100 translate-y-0'
                       : 'opacity-0 translate-y-4'
                   }`}
-                  style={{ transitionDelay: `${(index + 6) * 100}ms` }}
+                  style={{ transitionDelay: `${(index + 6) * 40}ms` }}
                 >
                   <div className="w-16 h-16 mx-auto mb-4 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center">
                     <achievement.icon size={32} className="text-blue-600 dark:text-blue-400" />

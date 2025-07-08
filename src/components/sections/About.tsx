@@ -57,7 +57,7 @@ const About: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div
           ref={ref}
-          className={`transition-all duration-1000 transform ${
+          className={`transition-all duration-500 transform ${
             isInView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
@@ -101,12 +101,12 @@ const About: React.FC = () => {
                 {education.map((item, index) => (
                   <div
                     key={item.id}
-                    className={`relative pl-8 transition-all duration-500 transform ${
+                    className={`relative pl-8 transition-all duration-300 transform ${
                       isInView
                         ? 'opacity-100 translate-x-0'
                         : 'opacity-0 -translate-x-4'
                     }`}
-                    style={{ transitionDelay: `${(index) * 100}ms` }}
+                    style={{ transitionDelay: `${index * 40}ms` }}
                   >
                     <div className="absolute left-0 top-0 w-5 h-5 rounded-full bg-blue-600 dark:bg-blue-500 z-10"></div>
                     {index < education.length - 1 && (

@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div
           ref={ref}
-          className={`transition-all duration-1000 transform ${
+          className={`transition-all duration-500 transform ${
             isInView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
@@ -106,12 +106,12 @@ const Contact: React.FC = () => {
               {contactInfo.map((item, index) => (
                 <div
                   key={index}
-                  className={`flex items-start space-x-4 transition-all duration-500 transform ${
+                  className={`flex items-start space-x-4 transition-all duration-300 transform ${
                     isInView
                       ? 'opacity-100 translate-x-0'
                       : 'opacity-0 -translate-x-4'
                   }`}
-                  style={{ transitionDelay: `${index * 100}ms` }}
+                  style={{ transitionDelay: `${index * 40}ms` }}
                 >
                   <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-lg text-blue-600 dark:text-blue-400">
                     <item.icon size={24} />
