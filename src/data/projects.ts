@@ -11,6 +11,7 @@ export const projects = [
     github: 'https://github.com/MDrakib-uddin/Hugging-face-fintuned/blob/main/image-classification.ipynb',
     demo: 'https://huggingface.co/spaces/rakib730/ImageClassification',
     icon: Brain,
+    category: 'CV',
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ export const projects = [
     link: 'https://colab.research.google.com/drive/1Fhl3q9igahWLWsrqPeuWZwziGlIzuWWm#scrollTo=GPxJg1znDGVr',
     github: 'https://github.com/MDrakib-uddin/Hugging-face-fintuned/blob/main/Finetuned_Token_classification_(PyTorch).ipynb',
     icon: MessageSquare,
+    category: 'NLP',
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ export const projects = [
     github: '#',
     demo: '#',
     icon: LineChart,
+    category: 'ML',
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ export const projects = [
     link: '#',
     github: '#',
     icon: Cpu,
+    category: 'ML',
   },
   {
     id: 5,
@@ -52,6 +56,7 @@ export const projects = [
     link: 'https://github.com/MDrakib-uddin/MLOPS-project1',
     github: 'https://github.com/MDrakib-uddin/MLOPS-project1',
     icon: Database,
+    category: 'MLOps',
   },
   {
     id: 6,
@@ -63,6 +68,7 @@ export const projects = [
     github: 'https://github.com/MDrakib-uddin/Hugging-face-fintuned/blob/main/Fine_tuning_audio_model.ipynb',
     demo: 'https://huggingface.co/spaces/rakib730/PartyMusicAgent',
     icon: Image,
+    category: 'Audio',
   },
 ];
 

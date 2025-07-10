@@ -60,6 +60,7 @@ const About: React.FC = () => {
           className={`transition-all duration-500 transform ${
             isInView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
+          data-aos="fade-up"
         >
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">

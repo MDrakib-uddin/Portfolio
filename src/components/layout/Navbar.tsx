@@ -1,11 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Moon, Sun } from 'lucide-react';
+import { Menu, X, Moon, Sun, Brain } from 'lucide-react';
 import { useTheme } from '../../contexts/ThemeContext';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const [activeSection, setActiveSection] = useState('Home');
+
+  const navLinks = [
+    { name: 'Home', href: '#home', section: 'home' },
+    { name: 'Projects', href: '#projects', section: 'projects' },
+    { name: 'Skills', href: '#skills', section: 'skills' },
+    { name: 'Competitive Programming', href: '#competitive-programming', section: 'competitive-programming' },
+    { name: 'About', href: '#about', section: 'about' },
+    { name: 'Contact', href: '#contact', section: 'contact' },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,14 +32,27 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
-  const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Competitive Programming', href: '#competitive-programming' },
-    { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' },
-  ];
+  // Scrollspy effect
+  useEffect(() => {
+    const sectionIds = navLinks.map((l) => l.section);
+    const handleScrollSpy = () => {
+      let current = sectionIds[0];
+      for (let i = 0; i < sectionIds.length; i++) {
+        const el = document.getElementById(sectionIds[i]);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 80 && rect.bottom > 80) {
+            current = sectionIds[i];
+            break;
+          }
+        }
+      }
+      setActiveSection(current.charAt(0).toUpperCase() + current.slice(1).replace(/-.*/, match => match.replace('-', ' ').replace(/\b\w/g, c => c.toUpperCase())));
+    };
+    window.addEventListener('scroll', handleScrollSpy, { passive: true });
+    handleScrollSpy();
+    return () => window.removeEventListener('scroll', handleScrollSpy);
+  }, []);
 
   return (
     <nav
@@ -43,9 +66,10 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           <a
             href="#home"
-            className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white"
+            className="flex items-center gap-2 text-xl md:text-2xl font-bold text-gray-900 dark:text-white"
           >
-            <span className="text-blue-600 dark:text-blue-400">Rakib</span> Uddin
+            <Brain className="w-7 h-7 text-blue-600 dark:text-blue-400 animate-skillicon" />
+            <span><span className="text-blue-600 dark:text-blue-400">Rakib</span> Uddin</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -55,7 +79,10 @@ const Navbar: React.FC = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  className={`transition-colors text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 ${
+                    activeSection.toLowerCase().replace(/ /g, '-') === link.section ? 'font-bold underline underline-offset-8 text-blue-600 dark:text-blue-400' : ''
+                  }`}
+                  aria-current={activeSection.toLowerCase().replace(/ /g, '-') === link.section ? 'page' : undefined}
                 >
                   {link.name}
                 </a>
@@ -100,8 +127,11 @@ const Navbar: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className={`transition-colors text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 ${
+                  activeSection.toLowerCase().replace(/ /g, '-') === link.section ? 'font-bold underline underline-offset-8 text-blue-600 dark:text-blue-400' : ''
+                }`}
                 onClick={() => setIsMobileMenuOpen(false)}
+                aria-current={activeSection.toLowerCase().replace(/ /g, '-') === link.section ? 'page' : undefined}
               >
                 {link.name}
               </a>

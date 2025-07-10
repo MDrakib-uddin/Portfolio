@@ -130,6 +130,7 @@ const Hero: React.FC = () => {
       <div 
         ref={ref}
         className="container mx-auto px-4 md:px-6 relative z-20"
+        data-aos="fade-up"
       >
         <div 
           className={`transition-all duration-500 transform ${
