@@ -91,6 +91,41 @@ const About: React.FC = () => {
             </div>
           </div>
 
+          {/* Experience Timeline */}
+          {false && (
+            <div className="mb-16">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
+                <Briefcase size={24} className="mr-2 text-blue-600 dark:text-blue-400" />
+                Experience
+              </h3>
+              <div className="relative border-l-2 border-blue-200 dark:border-blue-900/40 ml-4">
+                {experiences.map((exp, idx) => {
+                  const Icon = exp.icon;
+                  return (
+                    <div key={exp.id} className="mb-12 last:mb-0 relative">
+                      {/* Stepper Dot */}
+                      <span className="absolute -left-5 top-1 w-8 h-8 rounded-full bg-blue-600 dark:bg-blue-500 flex items-center justify-center shadow-lg">
+                        <Icon className="text-white w-5 h-5" />
+                      </span>
+                      {/* Vertical Line */}
+                      {idx < experiences.length - 1 && (
+                        <span className="absolute left-0 top-8 w-1 h-full bg-blue-200 dark:bg-blue-900/40"></span>
+                      )}
+                      <div className={`ml-8 p-6 rounded-xl bg-gray-50 dark:bg-gray-800/30 shadow transition-all duration-300 transform ${isInView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'}`} style={{ transitionDelay: `${idx * 40}ms` }}>
+                        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                          <h4 className="text-lg font-semibold text-gray-900 dark:text-white">{exp.role}</h4>
+                          <span className="text-sm text-gray-600 dark:text-gray-400 mt-1 md:mt-0">{exp.period}</span>
+                        </div>
+                        <div className="text-sm text-blue-600 dark:text-blue-400 font-medium mb-1">{exp.company}</div>
+                        <p className="text-gray-700 dark:text-gray-300">{exp.description}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Education */}
             <div>
