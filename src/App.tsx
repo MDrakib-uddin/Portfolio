@@ -9,11 +9,13 @@ import CompetitiveProgramming from './components/sections/CompetitiveProgramming
 import Contact from './components/sections/Contact';
 import Footer from './components/layout/Footer';
 import { ThemeProvider } from './contexts/ThemeContext';
+import BackgroundGrid from './components/layout/BackgroundGrid';
 
 function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+      <BackgroundGrid />
+      <div className="min-h-screen text-gray-900 dark:text-white relative z-10">
         <Navbar />
         <main>
           <Hero />

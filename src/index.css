@@ -13,3 +13,28 @@
 @keyframes fadein { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
 .animate-fadein { animation: fadein 0.3s cubic-bezier(0.4,0,0.2,1); }
 .project-card { will-change: transform, box-shadow; }
+
+@keyframes bgicon1 {
+  0% { transform: rotate(0deg) translateY(0px) scale(1); }
+  50% { transform: rotate(12deg) translateY(18px) scale(1.08); }
+  100% { transform: rotate(0deg) translateY(0px) scale(1); }
+}
+@keyframes bgicon2 {
+  0% { transform: rotate(0deg) translateX(0px) scale(1); }
+  50% { transform: rotate(-10deg) translateX(-20px) scale(1.05); }
+  100% { transform: rotate(0deg) translateX(0px) scale(1); }
+}
+@keyframes bgicon3 {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(18deg) scale(1.12); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+@keyframes bgicon4 {
+  0% { transform: rotate(0deg) translateY(0px) scale(1); }
+  50% { transform: rotate(-8deg) translateY(-16px) scale(1.07); }
+  100% { transform: rotate(0deg) translateY(0px) scale(1); }
+}
+.animate-bgicon1 { animation: bgicon1 32s ease-in-out infinite; }
+.animate-bgicon2 { animation: bgicon2 28s linear infinite; }
+.animate-bgicon3 { animation: bgicon3 36s ease-in-out infinite; }
+.animate-bgicon4 { animation: bgicon4 24s linear infinite; }
