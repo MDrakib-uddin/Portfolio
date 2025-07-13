@@ -120,7 +120,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden pt-24 md:pt-0">
       <canvas 
         ref={canvasRef} 
         className="absolute inset-0 w-full h-full z-0"
